@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cube World - Mountain Landscape</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Cube World: Mountain Landscape</h1>
+        <p>Project 2 — Brayden Molinyawe</p>
+      </header>
+
+      <nav id="levels">
+        <button data-level="0">Level 0</button>
+        <button data-level="1">Level 1</button>
+        <button data-level="2">Level 2</button>
+        <button data-level="3">Level 3</button>
+        <button data-level="4" class="active">Level 4</button>
+      </nav>
+
+      <section class="layout">
+        <div class="viewport">
+          <canvas id="c" width="900" height="580"></canvas>
+          <p id="error"></p>
+        </div>
+
+        <aside>
+          <h2 id="levelTitle">Level 4: Lighting</h2>
+          <p id="description"></p>
+
+          <label for="resolution">Grid size</label>
+          <select id="resolution">
+            <option value="12">12 × 12</option>
+            <option value="20" selected>20 × 20</option>
+            <option value="32">32 × 32</option>
+            <option value="48">48 × 48 (slower)</option>
+          </select>
+
+          <button id="pause">Pause orbit</button>
+          <button id="reset">Reset orbit</button>
+          <p id="stats"></p>
+
+          <h3>Image maps (Levels 2–4)</h3>
+          <div class="maps">
+            <figure>
+              <img src="assets/color-map.png">
+              <figcaption>Color</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/height-map.png">
+              <figcaption>Height</figcaption>
+            </figure>
+          </div>
+        </aside>
+      </section>
+
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
